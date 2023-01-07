@@ -78,7 +78,7 @@ nav {
   background-color: white;
 }
 
-@media(max-width:768px) {
+@media (max-width:768px) {
   .hamburger {
     display: block;
   }
@@ -113,6 +113,5 @@ nav {
 
   .nav-menu.active {
     left: 0;
-    
   }
 }
