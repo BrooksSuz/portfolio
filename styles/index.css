@@ -13,8 +13,16 @@ script {
 }
 
 li {
-  margin-bottom: 60px;
+  display: flex;
   list-style: none;
+}
+
+.about-me > ul {
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
 a {
@@ -48,8 +56,10 @@ h2 {
 }
 
 .nav-menu {
+  min-height: 200px;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
 }
 
 .nav-item {
@@ -79,8 +89,8 @@ h2 {
 }
 
 .about-me {
+  justify-content: space-evenly;
   align-items: center;
-  gap: 60px;
 }
 
 .about-me > h1 {
@@ -102,7 +112,7 @@ h2 {
 }
 
 .socials {
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: flex-end;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
