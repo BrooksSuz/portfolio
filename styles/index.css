@@ -119,7 +119,7 @@ h2 {
 }
 
 /* Mobile nav menu */
-@media (max-width: 768px) {
+@media (max-width: 561px) {
   .hamburger {
     display: block;
   }
@@ -154,5 +154,11 @@ h2 {
 
   .nav-menu.active {
     left: 0;
+  }
+}
+
+@media (max-width: 605px) {
+  .about-me > ul {
+    align-items: flex-start;
   }
 }
