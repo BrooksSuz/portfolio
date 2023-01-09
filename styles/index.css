@@ -1,5 +1,3 @@
-/* 561 width breakpoint */
-
 body {
   display: flex;
   gap: 1rem;
@@ -116,7 +114,14 @@ script {
     flex-direction: column;
   }
 
+  body > * {
+    margin: 0 0.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+
   nav {
+    margin-top: 0.5rem;
     min-height: 110px;
     border-radius: 0;
     border-top-left-radius: 0.5rem;
@@ -131,22 +136,15 @@ script {
     font-size: 1.5rem;
   }
 
+  script {
+    display: none;
+  }
+
   .headshot-placeholder {
     height: 64px;
     width: 64px;
   }
 
-  .socials {
-    min-height: 25px;
-    flex-direction: row;
-    align-items: center;
-    border-radius: 0;
-    border-bottom-left-radius: 0.5rem;
-    border-bottom-right-radius: 0.5rem;
-  }
-}
-
-@media (max-width: 865px) {
   .hamburger {
     display: block;
   }
@@ -180,5 +178,16 @@ script {
 
   .nav-menu.active {
     bottom: 0;
+  }
+
+  .socials {
+    min-width: 337px;
+    margin-bottom: 0.5rem;
+    min-height: 25px;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 0;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
   }
 }
