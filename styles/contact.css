@@ -1,0 +1,16 @@
+h3 {
+  margin-right: 0.3rem;
+}
+
+.contact-container {
+  min-width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (max-width: 865px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
