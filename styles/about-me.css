@@ -1,4 +1,7 @@
 .traits {
+  min-width: 50%;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
