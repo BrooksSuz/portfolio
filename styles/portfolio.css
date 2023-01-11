@@ -1,9 +1,11 @@
 .projects-container {
+  padding: 0.5rem;
   border-top-right-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
   min-width: 90%;
   display: flex;
   justify-content: space-around;
+  gap: 1rem;
 }
 
 .project {
@@ -14,15 +16,14 @@
 
 .project-placeholder {
   border-radius: 0.3rem;
-  height: 256px;
-  width: 300px;
+  min-height: 180px;
+  min-width: 270px;
   background-color: #333;
 }
 
-@media (max-width: 865px) {
+@media (max-width: 820px) {
   .projects-container {
-    padding: 0.5rem;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
   }
 }
