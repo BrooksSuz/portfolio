@@ -1,10 +1,25 @@
+.skills-container {
+  display: flex;
+}
+
 .skills {
-  border-top-right-radius: 0.5rem;
-  border-bottom-right-radius: 0.5rem;
   min-width: 35%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 0.3rem;
+}
+
+.skills > * {
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.skills > * img {
+  max-height: 1.2rem;
+  max-width: 1.2rem;
 }
 
 .knowledge {
@@ -12,20 +27,17 @@
   border-bottom-right-radius: 0.5rem;
   min-width: 40%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  gap: 2rem;
 }
 
 @media (max-width: 820px) {
   .skills {
-    flex-direction: column;
-    align-items: center;
+    min-width: 45%;
     gap: 0.5rem;
   }
 
   .knowledge {
     flex-direction: column;
-    align-items: center;
     gap: 0.5rem;
   }
 }
