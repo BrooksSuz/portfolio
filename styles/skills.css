@@ -11,6 +11,7 @@
 }
 
 .skills > li {
+  align-items: center;
   gap: 0.4rem;
 }
 
