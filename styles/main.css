@@ -3,9 +3,11 @@
 :root {
   --pop-color-1: #800000;
   --pop-color-2: #7C2400;
-  --text-color-1: #f9f6f0;
+  --text-color-1: #F9F6F0;
   --text-color-2: #262626;
+  --card-background: #2E3135;
   --tab-color: #D8D9CF;
+  --bar-color: #F0F2F5;
 }
 
 * {
@@ -21,9 +23,9 @@ body {
 }
 
 body > * {
-  margin: 0.5rem 0;
-  background-color: #2e3135;
-  box-shadow: 0 1rem 1rem black;
+  margin: 4rem 0;
+  background-color: var(--card-background);
+  box-shadow: 0.1rem 0.5rem 1rem black;
   display: flex;
   flex-direction: column;
 }
@@ -43,11 +45,9 @@ a {
 }
 
 nav {
-  margin: 4rem 0;
   margin-left: 4rem;
   border-top-left-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
-  display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
@@ -57,16 +57,14 @@ nav {
 h1 {
   color: var(--text-color-2);
   background-color: var(--tab-color);
-  min-width: 10%;
   font-size: 3rem;
   border-top-right-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
   align-self: flex-start;
-
 }
 
 h2 {
-  max-width: 80%;
+  max-width: 90%;
   font-size: 1.8rem;
 }
 
@@ -77,20 +75,18 @@ script {
 .headshot-placeholder {
   min-height: 256px;
   min-width: 256px;
-  background-color: #ACAFC9;
+  background-color: var(--tab-color);
   border-radius: 50%;
 }
 
 .nav-menu {
-  margin-left: 0.1rem;
   padding: 0.5rem;
-  min-width: 85%;
+  min-width: 80%;
   background-color: var(--tab-color);
   border-top-right-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-self: flex-start;
   gap: 0.1rem
 }
@@ -98,8 +94,6 @@ script {
 .nav-item {
   padding: 0.3rem;
   border-radius: 0.2rem;
-  display: flex;
-  justify-content: center;
 }
 
 .nav-item > a {
@@ -110,8 +104,8 @@ script {
   background-color: var(--pop-color-2);
 }
 
-.nav-item:hover > * {
-  color: #f0f2f5;
+.nav-item:hover > a {
+  color: var(--text-color-1);
 }
 
 .hamburger {
@@ -125,23 +119,20 @@ script {
   height: 3px;
   margin: 5px auto;
   transition: all 0.3s ease-in-out;
-  background-color: #f0f2f5;
+  background-color: var(--bar-color);
 }
 
 .section-content {
-  margin: 4rem 0;
   justify-content: space-evenly;
   flex: 3;
   gap: 1rem;
 }
 
 .section-content > * {
-  margin: 0 0.1rem;
   padding: 0.5rem;
 }
 
 .socials {
-  margin: 4rem 0;
   margin-right: 4rem;
   border-top-right-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
@@ -150,35 +141,32 @@ script {
   flex: 1;
 }
 
-.socials > * {
-  margin-right: 0.1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.socials > li {
   min-height: 12%;
   min-width: 85%;
   border-top-left-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
   background-color: var(--tab-color);
+  justify-content: center;
+  align-items: center;
 }
 
-.socials > *:hover {
+.socials > li:hover {
   background-color: var(--pop-color-2);
 }
 
-.socials > * img {
+.socials > li img {
   position: absolute;
   max-width: 4rem;
   max-height: 4rem;
   visibility: hidden;
-  z-index: 0;
   transition: opacity 0.5s;
-  opacity: 0.3;
+  opacity: 0;
 }
 
-.socials > *:hover img {
+.socials > li:hover img {
   visibility: visible;
-  opacity: 0.9;
+  opacity: 0.75;
 }
 
 .socials > * > a {
@@ -187,8 +175,8 @@ script {
   z-index: 1;
 }
 
-.socials > *:hover a {
-  color: #f0f2f5;
+.socials > li:hover a {
+  color: var(--text-color-1);
 }
 
 @media (max-width: 1366px) {
@@ -235,15 +223,11 @@ script {
   }
 
   h1 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 
   h2 {
-    font-size: 1.3rem;
-  }
-
-  script {
-    display: none;
+    font-size: 1.4rem;
   }
 
   .headshot-placeholder {
@@ -268,60 +252,50 @@ script {
   }
 
   .nav-menu {
-    margin-left: 0;
+    min-width: 100%;
     position: fixed;
     bottom: -100%;
-    flex-direction: column;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-    align-items: center;
-    align-self: center;
     background-color: var(--tab-color);
-    min-width: 100%;
-    transition: 0.3s;
-    gap: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    align-self: center;
+    gap: 1rem;
     z-index: 2;
+    transition: 0.3s;
   }
 
   .nav-menu.active {
-    border-top-left-radius: 0.5rem;
-    border-top-right-radius: 0.5rem;
     bottom: 0;
-  }
-
-  .nav-item {
-    min-width: 100%;
-    margin: 0.8rem 0;
-    border: none;
   }
 
   .section-content {
     margin: 0 0.5rem;
-  }
-
-  .section-content > * {
-    margin: 0.5rem 0.2rem;
+    padding: 0.5rem 0;
   }
 
   .socials {
     margin: 0 0.5rem;
-    margin-bottom: 0.5rem;
     min-height: 2.5rem;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0.5rem;
     flex-direction: row;
     align-items: center;
-    border-radius: 0;
-    border-bottom-left-radius: 0.5rem;
-    border-bottom-right-radius: 0.5rem;
-    flex: 0;
+    flex: 0 1 auto;
   }
 
-  .socials > * {
+  .socials > li {
     min-width: auto;
     padding: 0.2rem;
     border-radius: 0.2rem;
+    flex-basis: 26%;
   }
 
-  .socials > * > a {
+  .socials > li:hover img {
+    visibility: hidden;
+  }
+
+  .socials > li a {
     font-size: 1.1rem;
   }
 }
