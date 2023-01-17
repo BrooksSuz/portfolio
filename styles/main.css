@@ -24,7 +24,7 @@ body {
 
 body > * {
   background-color: var(--card-background);
-  box-shadow: 0.1rem 0.5rem 1rem black;
+  box-shadow: 0.1rem 0.1rem 0.8rem black;
   display: flex;
   flex-direction: column;
 }
