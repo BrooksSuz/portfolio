@@ -9,11 +9,11 @@ nav {
   flex: 2;
 }
 
-.headshot-placeholder {
-  min-height: 256px;
-  min-width: 256px;
-  background-color: var(--tab-color);
-  border-radius: 50%;
+.headshot {
+  height: 300px;
+  width: 226px;
+  border: 1px solid var();
+  border-radius: 0.5rem;
 }
 
 .nav-menu {
@@ -79,9 +79,9 @@ nav {
     flex: 0 1 auto;
   }
 
-  .headshot-placeholder {
-    min-height: 64px;
-    min-width: 64px;
+  .headshot {
+    height: 37.5px;
+    width: 28.25px;
   }
 
   .hamburger {
