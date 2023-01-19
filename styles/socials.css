@@ -10,7 +10,7 @@
 
 .socials > li {
   min-height: 12%;
-  min-width: 80%;
+  min-width: 95%;
   border-top-left-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
   background-color: var(--tab-color);

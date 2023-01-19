@@ -5,15 +5,28 @@
   justify-content: center;
 }
 
+.projects-container a {
+  min-height: auto;
+  min-width: auto;
+  color: var(--text-color-2);
+  background-color: var(--tab-color);
+  border-radius: 0.2rem;
+  flex-basis: 30%;
+}
+
+.projects-container a:hover {
+  background-color: var(--pop-color-2);
+  color: var(--text-color-1);
+}
+
 .project {
   flex-direction: column;
   align-items: center;
   gap: 0.3rem;
 }
 
-.project-placeholder {
-  border-radius: 0.3rem;
-  min-height: 180px;
-  min-width: 270px;
-  background-color: #D8D9CF;
+.anchor-container {
+  min-width: 70%;
+  display: flex;
+  justify-content: space-between;
 }
