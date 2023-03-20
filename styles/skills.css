@@ -31,3 +31,9 @@
   flex-basis: 35%;
   gap: 0.3rem;
 }
+
+@media (max-width: 820px) {
+  .skills-container {
+    flex-direction: column;
+  }
+}
