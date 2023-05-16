@@ -1,6 +1,4 @@
 .socials {
-  margin: 4rem 0;
-  margin-right: 4rem;
   border-top-right-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
   justify-content: space-evenly;
@@ -9,13 +7,13 @@
 }
 
 .socials > li {
-  min-height: 12%;
   min-width: 95%;
   border-top-left-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
   background-color: var(--tab-color);
   justify-content: center;
   align-items: center;
+  flex-basis: 15%;
 }
 
 .socials > li:hover {
@@ -55,20 +53,19 @@
 
 @media (max-width: 820px) {
   .socials {
-    margin: 0 0.5rem;
-    min-height: 2.5rem;
+    margin-top: 0;
+    margin-left: 0.5rem;
     border-top-right-radius: 0;
     border-bottom-left-radius: 0.5rem;
     flex-direction: row;
     align-items: center;
-    flex: 0 1 auto;
+    flex: 1;
   }
 
   .socials > li {
     min-width: auto;
     padding: 0.2rem;
     border-radius: 0.2rem;
-    flex-basis: 26%;
   }
 
   .socials > li:hover img {

@@ -13,7 +13,7 @@ h2 {
 }
 
 .section-content {
-  margin: 4rem 0;
+  justify-content: space-around;
   flex: 3;
   gap: 1rem;
   overflow-y: auto;
@@ -47,7 +47,9 @@ h2 {
   }
 
   .section-content {
+    justify-content: flex-start;
     margin: 0 0.5rem;
     padding: 0.5rem 0;
+    flex: 8;
   }
 }

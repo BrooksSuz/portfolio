@@ -1,6 +1,4 @@
 nav {
-  margin: 4rem 0;
-  margin-left: 4rem;
   border-top-left-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
   flex-direction: column;
@@ -76,8 +74,8 @@ nav {
     border-bottom: 0;
     border-top-left-radius: 0.5rem;
     border-top-right-radius: 0.5rem;
-    flex: 0 1 auto;
     gap: 0.5rem;
+    flex: 2;
   }
 
   .headshot {
