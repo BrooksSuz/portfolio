@@ -14,9 +14,9 @@ h2 {
 
 .section-content {
   margin: 4rem 0;
-  justify-content: space-evenly;
   flex: 3;
   gap: 1rem;
+  overflow-y: auto;
 }
 
 .section-content > * {
