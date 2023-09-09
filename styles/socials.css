@@ -53,6 +53,7 @@
 
 @media (max-width: 820px) {
   .socials {
+    padding: 0.5rem;
     margin-top: 0;
     margin-left: 0.5rem;
     border-top-right-radius: 0;
@@ -60,12 +61,14 @@
     flex-direction: row;
     align-items: center;
     flex: 1;
+    gap: 0.5rem;
   }
 
   .socials > li {
     min-width: auto;
     padding: 0.2rem;
     border-radius: 0.2rem;
+    flex: 1;
   }
 
   .socials > li:hover img {
